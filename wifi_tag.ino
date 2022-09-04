@@ -1,6 +1,7 @@
 #include <WiFi.h>
 #include <Adafruit_NeoPixel.h>
 
+#define DEBUG
 #define ADAFRUIT_FEATHER_ESP32_V2
 
 #define US_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
@@ -9,7 +10,7 @@
 #define T_CONN_WAIT_S 5
 #define CONN_RETRY_TIMES_THRESHOLD 2
 #define T_S_CONN_BACKOFF_BASE 30
-#define MAX_BACKOFF_TIMES 7  /* e.g., if base is 30s and max backoff times is 7, then the max wait time is 32 minutes */
+#define MAX_BACKOFF_TIMES 4  /* e.g., if base is 30s and max backoff times is 7, then the max wait time is 64 minutes */
 
 #define Touch_Threshold 60 /* Greater the value, more the sensitivity */
 
