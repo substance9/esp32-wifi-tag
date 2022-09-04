@@ -6,7 +6,7 @@
 
 #define US_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
 #define MS_TO_S_FACTOR 1000  /* Conversion factor for milli seconds to seconds */
-#define T_DEEPSLEEP_S 30
+#define T_DEEPSLEEP_S 60
 #define T_CONN_WAIT_S 5
 #define CONN_RETRY_TIMES_THRESHOLD 2
 #define T_S_CONN_BACKOFF_BASE 30
